@@ -27,7 +27,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dsci310-ia3-evamaa-docker
+      run: docker build . --file Dockerfile --tag dsci310-ia3-evamaa-docker:latest
 
     - name: Push the Docker image
-      run: docker push dsci310-ia3-evamaa-docker
+      run: docker push dsci310-ia3-evamaa-docker:latest
